@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "racehud",
+    "version": "${version}",
+    "name": "RaceHUD",
+    "description": "HUD for ice boat racing.",
+    "authors": [
+        "5h1zuy4"
+    ],
+    "contact": {
+        "sources": "https://github.com/ho5h1/RaceHUD"
+    },
+    "license": "GPL-3.0-or-later",
+    "icon": "assets/racehud/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "shizuya.racehud.Common"
+        ],
+        "modmenu": [
+            "shizuya.racehud.MenuInteg"
+        ]
+    },
+    "mixins": [
+        "racehud.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.21",
+        "fabric": "*",
+        "minecraft": ">=1.20.1",
+        "java": ">=17",
+        "cloth-config2": ">=11.0.99"
+    },
+    "suggests": {
+        "modmenu": ">=7.2.1"
+    }
+}
